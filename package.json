@@ -1,21 +1,27 @@
 {
-	"name": "fastcgi-client",
-	"description": "A FastCGI client implementation in Node.js, mainly designed for cummunication with PHP.",
-	"author": "LastLeaf <bqfu@163.com> http://lastleaf.me",
-	"homepage": "https://github.com/LastLeaf/node-fastcgi-client",
-	"repository": { "type": "git", "url": "https://github.com/LastLeaf/node-fastcgi-client.git" },
-	"license": "MIT",
-	"version": "0.0.1",
-	"engines": {
-		"node": "^0.10.0 || ^4.0.0 || ^5.0.0"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"mocha": "^2.3.3",
-		"istanbul": "~0.3.21"
-	},
-	"scripts": {
-		"test": "node_modules/.bin/mocha",
-		"coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -R spec"
-	}
+    "name": "@tuxrampage/fastcgi-client",
+    "description": "A FastCGI client implementation in Node.js, mainly designed for communication with PHP.",
+    "author": "Axel H. <tuxrampage@gmail.com>",
+    "homepage": "https://github.com/tux-rampage/node-fastcgi-client",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tux-rampage/node-fastcgi-client.git"
+    },
+    "license": "MIT",
+    "version": "1.0.0",
+    "engines": {
+        "node": "^12 | ^14"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^14.10.3",
+        "istanbul": "^0.4.5",
+        "mocha": "^8.1.3",
+        "tslint": "^6.1.3",
+        "typescript": "^4.0.2"
+    },
+    "scripts": {
+        "test": "mocha",
+        "coverage": "istanbul cover mocha -- -R spec"
+    }
 }
